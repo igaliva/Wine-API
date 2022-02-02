@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(161, 51, 51);
+}
+
+h1 {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin: 5rem;
+	gap: 5rem;
+}
+
+.wine {
+	text-align: center;
+	position: relative;
+	height: 24rem;
+	border: 0.5rem solid #ccc;
+	border-radius: 0.6rem;
+    box-shadow: 0 0 10px rgb(230, 104, 104);
+    overflow: hidden;
+}
+
+.wine img {
+	height: 15rem;
+	margin: auto;
+	position: absolute;
+	padding: 2rem;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    border: none;
+    outline: none;
+    background:none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .wine {
+        width: 100%;
+    }
+}
